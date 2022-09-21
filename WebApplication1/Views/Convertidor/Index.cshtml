@@ -1,0 +1,40 @@
+﻿@model Application.ViewModel.ConvertidorViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h3 class="col-md-6 offset-3 bg-success text-white">Este es el convertidor de moneda</h3>
+
+<div class="col-md-6 offset-3 mt-3">
+    <form method="post" asp-action="Index" asp-for="Convertidor">
+
+        <div>
+            <label>Moneda en la que esta: </label>
+            <select class="form-select" asp-for="Tipo">
+                <option value="1">Peso dominicano</option>
+                <option value="2">Dolar estado unidense</option>
+                <option value="3">Euro</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Moneda a la que quiere convertir: </label>
+            <select class="form-select" asp-for="Tipo_Convertir">
+                <option value="1">Peso dominicano</option>
+                <option value="2">Dolar estado unidense</option>
+                <option value="3">Euro</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Cantidad: </label>
+            <input type="text" asp-for="Cantidad" />
+        </div>
+
+        <button class="btn btn-primary bt-5">Calcular</button>
+
+    </form>
+
+    <div>Aqui ira el resultado</div>
+    <a>@ViewBag.Valor</a>
+</div>

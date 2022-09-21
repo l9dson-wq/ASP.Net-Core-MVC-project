@@ -1,0 +1,62 @@
+﻿@model Application.ViewModel.PrestamosViewModel
+@{
+    ViewData["Title"] = "Calculadora de prestamos";
+
+    List<int> numeros = new List<int> { 
+        12, 
+        18, 
+        24, 
+        30, 
+        36, 
+        42, 
+        48, 
+        54, 
+        60, 
+        66, 
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108,
+        114,
+        120
+    };
+}
+
+
+<div>
+    <h2>Calculadora de prestamos a plazos</h2>
+
+    <form method="post" asp-action="Index" asp-for="Prestamos">
+
+        <div>
+            <label asp-for="Monto">Monto: </label>
+            <input type="text" asp-for="Monto" />
+        </div>
+
+        <div>
+            <label asp-for="Tipo_Prestamo">Tipo de prestamo: </label>
+            <select class="form-select" asp-for="Tipo_Prestamo">
+                <option value="1">Personal</option>
+                <option value="2">Automovil</option>
+                <option value="3">Hipotecario</option>
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="Meses">Plazo en meses: </label>
+            <select class="form-select" asp-for="Meses">
+                @for (int i = 12; i < 121; i = i + 6){
+                    <option value="@i">@i Meses</option>
+                }
+            </select>
+        </div>
+
+        <button class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div>Por aca vendria estando el calculo del prestamo</div>
+    <div>@ViewBag.testing</div>
+</div>

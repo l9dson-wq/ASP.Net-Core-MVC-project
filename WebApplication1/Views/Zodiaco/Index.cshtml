@@ -1,0 +1,34 @@
+﻿@model Application.ViewModel.ZodiacoViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="col-md-6 offset-3">
+    <form method="post" asp-action="Index" asp-for="Zodiaco">
+
+        <div>
+            <label asp-for="Dia" class="form-label">Dia:</label>
+            <select class="form-select" asp-for="Dia">
+                @for(int i=0; i<32; i++){
+                    <option value="@i">@i</option>
+                }
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="Mes" class="form-label">Mes:</label>
+            <select class="form-select" asp-for="Mes">
+                @for (int i = 0; i < 13; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+            </select>
+        </div>
+
+        <button class="btn btn-primary mb-3 col-md-6 offset-3" type="submit">Send</button>
+
+    </form>
+
+    <div>@ViewBag.ZodiacData</div>
+</div>
