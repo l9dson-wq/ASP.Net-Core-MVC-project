@@ -3,38 +3,48 @@
     ViewData["Title"] = "Create";
 }
 
-<h3 class="col-md-6 offset-3 bg-success text-white">Este es el convertidor de moneda</h3>
+<h3 class="text-center">Convertidor de moneda</h3>
 
 <div class="col-md-6 offset-3 mt-3">
-    <form method="post" asp-action="Index" asp-for="Convertidor">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="~/css/Images/coins2.jpg" class="" style="width: 210px; height: 350px;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <form method="post" asp-action="Index" asp-for="Convertidor">
 
-        <div>
-            <label>Moneda en la que esta: </label>
-            <select class="form-select" asp-for="Tipo">
-                <option value="1">Peso dominicano</option>
-                <option value="2">Dolar estado unidense</option>
-                <option value="3">Euro</option>
-            </select>
+                        <div class="col-md-8 offset-md-2">
+                            <label>Moneda actual: </label>
+                            <select class="form-select" asp-for="Tipo">
+                                <option value="1">Peso dominicano</option>
+                                <option value="2">Dolar estado unidense</option>
+                                <option value="3">Euro</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-8 offset-md-2">
+                            <label>Convertir a: </label>
+                            <select class="form-select" asp-for="Tipo_Convertir">
+                                <option value="1">Peso dominicano</option>
+                                <option value="2">Dolar estado unidense</option>
+                                <option value="3">Euro</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-8 offset-md-2">
+                            <label>Cantidad: </label>
+                            <input type="text" asp-for="Cantidad" />
+                        </div>
+
+                        <button class="btn btn-primary bt-3 mt-3 col-md-8 offset-md-2">Calcular</button>
+
+                    </form>
+
+                    <h5 class="col-md-8 offset-md-2 mt-3">Resultado: <strong class="text-primary">@ViewBag.Valor</strong></h5>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <label>Moneda a la que quiere convertir: </label>
-            <select class="form-select" asp-for="Tipo_Convertir">
-                <option value="1">Peso dominicano</option>
-                <option value="2">Dolar estado unidense</option>
-                <option value="3">Euro</option>
-            </select>
-        </div>
-
-        <div>
-            <label>Cantidad: </label>
-            <input type="text" asp-for="Cantidad" />
-        </div>
-
-        <button class="btn btn-primary bt-5">Calcular</button>
-
-    </form>
-
-    <div>Aqui ira el resultado</div>
-    <a>@ViewBag.Valor</a>
+    </div>
 </div>

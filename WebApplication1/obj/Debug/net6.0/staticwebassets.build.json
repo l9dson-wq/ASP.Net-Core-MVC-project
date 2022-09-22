@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ktz2FzApkYiNsTbyWnFTpT9ljT7Yi6kIYBhLIzJXhH8=",
+  "Hash": "AK5Bji+rmHZpdNeJxFUL7oJD6UEw9kUipvDNgCC3+7g=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\AndelDev\\Desktop\\WebApplication1\\WebApplication1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\AndelDev\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\css\\Images\\coins.jpeg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AndelDev\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "css/Images/coins.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\coins.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\AndelDev\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\css\\Images\\coins2.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AndelDev\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "css/Images/coins2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\coins2.jpg"
     },
     {
       "Identity": "C:\\Users\\AndelDev\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",

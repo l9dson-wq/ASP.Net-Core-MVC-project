@@ -23,7 +23,7 @@ namespace WebApplication1.Controllers
         {
             ConvertidorService.Convert(cv);
             double valor = ConvertidorService.GetAll();
-            ViewBag.Valor = valor;
+            ViewBag.Valor = Math.Round(valor, 2);
             return View();
         }
     }

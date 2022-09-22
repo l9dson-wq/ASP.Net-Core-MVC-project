@@ -3,6 +3,7 @@
     ViewData["Title"] = "Create";
 }
 
+<h3 class="text-center">Conoce tu signo del zodiaco</h3>
 
 <div class="col-md-6 offset-3">
     <form method="post" asp-action="Index" asp-for="Zodiaco">
@@ -26,9 +27,9 @@
             </select>
         </div>
 
-        <button class="btn btn-primary mb-3 col-md-6 offset-3" type="submit">Send</button>
+        <button class="btn btn-primary mb-3 col-md-6 offset-3 mt-3" type="submit">Send</button>
 
     </form>
 
-    <div>@ViewBag.ZodiacData</div>
+    <h4 class="text-primary text-center mt-3">@ViewBag.ZodiacData</h4>
 </div>
